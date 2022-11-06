@@ -1,8 +1,3 @@
-/* 主页顶部高度 */
-#page-header.full_page {
-    height: 400px;
-}
-
 /* 鼠标样式 */
 body {
     cursor: url(../img/mouse/default.cur),
@@ -88,29 +83,52 @@ p.grey, span.grey {
 #twikoo .tk-comment {
     padding: 15px;
     border-radius: 8px;
-    background: #F8F8F9;
+    border: 1px solid #DBDCDC;
+    background: rgba(255, 255, 255, 0.5);
 }
 
-/* 顶部加载进度条 */
-.pace {
-    -webkit-pointer-events: none;
-    pointer-events: none;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+/* 页脚透明 */
+#footer{
+    background: transparent!important;
 }
-
-.pace-inactive {
-    display: none;
+/*!* 页脚黑色透明玻璃效果移除 *!*/
+/*#footer::before{*/
+/*    background: transparent!important;*/
+/*}*/
+/* 头图透明 */
+#page-header{
+    background: transparent!important;
 }
+/*!* 头图遮罩层透明 *!*/
+/*#page-header::before{*/
+/*    background: transparent!important;*/
+/*}*/
 
-.pace .pace-progress {
-    background: #49B1F5;
-    position: fixed;
-    z-index: 2000;
-    top: 0;
-    right: 100%;
-    width: 100%;
-    height: 2px;
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item{
+    background: rgba(255, 255, 255, 0.9);
+}
+/* 首页侧栏卡片 */
+.card-widget{
+    background: rgba(255, 255, 255, 0.9)!important;
+}
+/* 文章页面正文背景 */
+div#post{
+    background: rgba(255, 255, 255, 0.9);
+}
+/* 分页页面 */
+div#page{
+    background: rgba(255, 255, 255, 0.9);
+}
+/* 归档页面 */
+div#archive{
+    background: rgba(255, 255, 255, 0.9);
+}
+/* 标签页面 */
+div#tag{
+    background: rgba(255, 255, 255, 0.9);
+}
+/* 分类页面 */
+div#category{
+    background: rgba(255, 255, 255, 0.9);
 }
